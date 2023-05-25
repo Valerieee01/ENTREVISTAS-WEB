@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="stilos.css">
     <title>Entrevistas Psicologicas</title>
 </head>
+
 <body>
-    
+
     <section>
         <img src="" alt="Logo campus" width="330px">
         <h1><strong>Psychological Interview <span></span></strong></h1>
@@ -21,19 +26,18 @@
             <div class="col-md-6 agregar-entrevista">
                 <form id="nueva-entrevista">
                     <legend class="mb-4">Camper's Information</legend>
-                    
+
                     <div class="form-group">
                         <label class="col-sm-4 col-lg-4 col-form-label">Camper:</label>
                         <div class="col-sm-8 col-lg-8">
                             <select class="form-control" name="camper" id="carper">
                                 <option value="">Seleccione Camper</option>
-
                             </select>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="col-sm-4 col-lg-4 col-form-label">
+                        <label class="col-sm-4 col-lg-12 col-form-label">
                             <div class="col-sm-8 col-lg-8">
                                 <select class="form-control" name="psicologa" id="psicologa">
                                     <option value="">Seleccione Psicologa</option>
@@ -45,20 +49,49 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="col-sm-4 col-lg-4 col-form-label"></label>
-                            <div class="col-sm-8 col-lg-8">
-                                <select class="form-control" name="psicologa" id="psicologa">
-                                    <option value="">Seleccione Psicologa</option>
-                                    <option value="Psicologa Angie">Psicologa Angie</option>
-                                    <option value="Psicologa Vanessa">Psicologa Vanessa</option>
-                                </select>
-                            </div>
+                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" name="fecha" id="fecha" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" name="Hora" id="Hora" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Resultados:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" name="resultados" id="resultados" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br>
+                        <button type="submit" class="btn btn-success w-100 d-block">Create Psychological
+                            Interview</button>
                     </div>
 
                 </form>
             </div>
-        </div>
-    </div>
-    
+            <div class="col-md-6">
+
+                <h3 id="administra" class="mb-4">Manager Psychological Interview</h3>
+                <ul id="entrevistas" class="list-group lista-entrevistas">
+
+                </ul>
+            </div>
+        </div> <!-- row -->
+    </div><!--  -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
